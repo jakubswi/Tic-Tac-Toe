@@ -14,12 +14,14 @@ def ask_player(player_num, board):
         except ValueError:
             print("Invalid input. Please enter a number.")
 
+
 def printing_matrix(matrix):
     print(f" {matrix[0][0]} | {matrix[0][1]} | {matrix[0][2]}")
     print("----------")
     print(f" {matrix[1][0]} | {matrix[1][1]} | {matrix[1][2]}")
     print("----------")
     print(f" {matrix[2][0]} | {matrix[2][1]} | {matrix[2][2]}")
+
 
 def check_for_win(matrix):
     for i in range(3):
@@ -33,7 +35,8 @@ def check_for_win(matrix):
         return matrix[0][2]
     return None
 
-board= [
+
+board = [
     [" ", " ", " "],
     [" ", " ", " "],
     [" ", " ", " "]
